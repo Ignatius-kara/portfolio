@@ -198,50 +198,8 @@
   </footer>
 
  
- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
- 
-  document.querySelectorAll('.skill-item').forEach(item => {
-    const level = item.getAttribute('data-level');
-    setTimeout(() => {
-      item.querySelector('.skill-fill').style.width = level + '%';
-    }, 300);
-  });
-
-  document.querySelectorAll('.circle-skill').forEach(circle => {
-    const level = circle.getAttribute('data-level');
-    const degree = level * 3.6;
-    setTimeout(() => {
-      circle.style.background = `conic-gradient(#d6a758 0% ${degree}%, #333 ${degree}% 100%)`;
-    }, 300);
-  });
-
-
-  var typed = new Typed('#typed-role', {
-    strings: ['Product Manager', 'Creative', 'Strategist', 'Builder'],
-    typeSpeed: 60,
-    backSpeed: 30,
-    backDelay: 2000,
-    loop: true,
-    showCursor: true
-  });
-
-
-    // Hamburger toggle
-    function toggleMenu() {
-      document.getElementById('navMenu').classList.toggle('active');
-    }
-    // Smooth scroll for internal anchors
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href'))
-          .scrollIntoView({ behavior: 'smooth' });
-        document.getElementById('navMenu').classList.remove('active');
-      });
-    });
-  </script>
 </body>
 
 
 </html>
+
